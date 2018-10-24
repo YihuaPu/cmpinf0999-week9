@@ -1,0 +1,33 @@
+pre-lecture: mention office hours yesterday
+
+what’s pandas
+ - McKinney: He also wrote one of the textbooks you’ll be reading from, *Python for Data Analysis*. He’s… kind of a big deal.
+ - …data analysis on a huge scale, consider numpy: If you could reasonably use the phrase “big data” to refer to what you’re doing, using numpy might be something to consider, as pandas, by nature, is always going to solve problems in a way that works with most, if not all, datasets. 
+
+why pandas?
+ - …with a given data set: Learning these structures and functions is difficult. pandas is a pretty specialized library, written for a pretty specialized purpose; understanding it is akin to learning how to understand someone speaking with a thick Irish accent: you’re both communicating in the same language, but it can take time to adjust to some particular quirks. Building up your mental model of how pandas represents data is going to be the major hurdle of the next few weeks.
+
+pandas basics
+ - …you're importing: This is because programmers are lazy, and will do anything to save three keystrokes.
+
+diving into data
+ - CSV and TSV files are two common, simple ways to store data. They stand for comma-separated values and tab-separated values, respectively.
+ - aren’t all that popular: The first one is more likely, given how many `NaN`’s we saw earlier.
+
+filter function
+
+def filter_less_than(x, threshold):
+    if len(x) > threshold:
+        return True
+    else:
+        return False
+
+series
+ - iloc: iloc stands for index location. It, um, gets the data located at the current index.
+ - population.loc[“California”]: try iloc, see what happens
+
+dataframe
+ - …with pandas: We’ve used dataframes already, when we worked with the community center sheet.
+
+exercises
+ - JupyterLab kernel reset bug: if you have a code cell currently running, make sure you stop it before trying to run it again. That’s the main cause of “kernel reset” bugs, from my investigation.
